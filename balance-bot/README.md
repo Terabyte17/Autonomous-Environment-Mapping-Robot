@@ -10,3 +10,8 @@ Download this folder as it is on your PC. Then open the folder on your terminal 
 ### Environment and Training
 The model training using the DeepQ Network has been done in the balancebot_learning_deepq.py file. The environment used is available in the envs folder as balancebot_env.py file. The xml file of the 2 wheeled robot has also been given.
 
+<p align="center">
+ <img  width="300" height="400" src="https://github.com/Terabyte17/Autonomous-Room-Mapping-Robot/blob/master/balance-bot/balance-bot.png">
+</p>
+
+While training the model, you require tensorflow==1.14.0 version or any other tensorflow version which is compatible with OpenAI gym baselines.  
