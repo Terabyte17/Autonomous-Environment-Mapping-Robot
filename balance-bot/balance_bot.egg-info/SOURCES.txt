@@ -1,0 +1,6 @@
+setup.py
+balance_bot.egg-info/PKG-INFO
+balance_bot.egg-info/SOURCES.txt
+balance_bot.egg-info/dependency_links.txt
+balance_bot.egg-info/requires.txt
+balance_bot.egg-info/top_level.txt
