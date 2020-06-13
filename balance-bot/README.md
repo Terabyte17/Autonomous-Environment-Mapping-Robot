@@ -15,3 +15,5 @@ The model training using the DeepQ Network has been done in the balancebot_learn
 </p>
 
 While training the model, you require tensorflow==1.14.0 version or any other tensorflow version which is compatible with OpenAI gym baselines.  
+
+This has been included, because future work may include this 2-wheeled robot trained to move around and map the environment in-place of husky.
