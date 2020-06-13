@@ -10,3 +10,5 @@ The environment is a 20 by 20 part of the plane. The arena has been prepared in 
 
 ### Autonomous Run
 The robot starts moving autonomously after the key 'h' has been pressed at the start of the simulation. It takes around 9 mins for the car 'husky' to reach and detect the other 'husky'. Once it detects the car, an image is shown. For exiting the simulation after the car has been detected, any button can be pressed.
+
+#### Make sure that you have installed the latest version of ImageAI and the relevant version of tensorflow, before running this script.
