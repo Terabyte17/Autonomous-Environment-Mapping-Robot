@@ -2,7 +2,7 @@
 The main project is in the Environment directory of this Github repo. The folder should be downloaded as it is, and the object detection model detection_model-ex-005--loss-0004.657.h5 file must be downloaded from the models folder from this link - https://drive.google.com/drive/folders/1KFqMZFUNzZ-NAC3F-uDEITPFsUmESCaP?usp=sharing.
 Save the model .h5 file in the environment folder.
 
-The project report has also been given in this repo as Autonomous Env Mapping Robot.pdf 
+The project report has also been given in this repo as Autonomous Env Mapping Robot.pdf -- https://github.com/Terabyte17/Autonomous-Environment-Mapping-Robot/blob/master/Autonomous%20Env%20Mapping%20Robot.pdf
 
 You can watch the video of the simulation here:-
 
