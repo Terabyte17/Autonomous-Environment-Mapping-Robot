@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<robot name="chess">
+
+	<material name="black">
+		<color rgba="0 0 0 1"/>
+	</material>
+	
+	<material name="white">
+		<color rgba="1 1 1 1"/>
+	</material>
+	
+	
+	<link name="00">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+		</visual>
+	</link>
+
+	<link name="01">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+	
+	<joint name="00-01" type="fixed">
+		<parent link="00"/>
+		<child link="01"/>
+		<origin rpy="0 0 0" xyz="0 0.05 0"/>
+	</joint>
+
+	
+	<link name="10">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0.05 0 0"/>
+		</visual>
+	</link>
+
+	<joint name="00-10" type="fixed">
+		<parent link="00"/>
+		<child link="10"/>
+		<origin rpy="0 0 0" xyz="0.05 0 0"/>
+	</joint>
+
+	<link name="11">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="10-11" type="fixed">
+		<parent link="10"/>
+		<child link="11"/>
+		<origin rpy="0 0 0" xyz="0.05 0.05 0"/>
+	</joint>
+
+	<link name="02">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="01-02" type="fixed">
+		<parent link="01"/>
+		<child link="02"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>
+
+	<link name="12">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="11-12" type="fixed">
+		<parent link="11"/>
+		<child link="12"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>
+
+	<link name="03">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="02-03" type="fixed">
+		<parent link="02"/>
+		<child link="03"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>
+
+	<link name="13">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="12-13" type="fixed">
+		<parent link="12"/>
+		<child link="13"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>
+
+	<link name="20">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0.05 0 0"/>
+		</visual>
+	</link>
+
+	<joint name="10-20" type="fixed">
+		<parent link="10"/>
+		<child link="20"/>
+		<origin rpy="0 0 0" xyz="0.1 0 0"/>
+	</joint>
+
+	<link name="30">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0.05 0 0"/>
+		</visual>
+	</link>
+
+	<joint name="20-30" type="fixed">
+		<parent link="20"/>
+		<child link="30"/>
+		<origin rpy="0 0 0" xyz="0.1 0 0"/>
+	</joint>
+
+	<link name="21">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="20-21" type="fixed">
+		<parent link="20"/>
+		<child link="21"/>
+		<origin rpy="0 0 0" xyz="0.05 0.05 0"/>
+	</joint>	
+
+	<link name="31">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="30-31" type="fixed">
+		<parent link="30"/>
+		<child link="31"/>
+		<origin rpy="0 0 0" xyz="0.05 0.05 0"/>
+	</joint>	
+
+	<link name="22">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="21-22" type="fixed">
+		<parent link="21"/>
+		<child link="22"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>	
+
+	<link name="23">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="22-23" type="fixed">
+		<parent link="22"/>
+		<child link="23"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>	
+
+	<link name="32">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="white"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="31-32" type="fixed">
+		<parent link="31"/>
+		<child link="32"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>	
+
+	<link name="33">
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.001"/>
+			</geometry>
+			<material name="black"/>
+			<origin rpy="0 0 0" xyz="0 0.05 0"/>
+		</visual>
+	</link>
+
+	<joint name="32-33" type="fixed">
+		<parent link="32"/>
+		<child link="33"/>
+		<origin rpy="0 0 0" xyz="0 0.1 0"/>
+	</joint>	
+	
+</robot>
+
