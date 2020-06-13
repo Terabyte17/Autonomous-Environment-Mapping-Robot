@@ -4,7 +4,7 @@ The full script for the simulation of the autonomous environment mapping robot i
 ### Environment
 The environment is a 20 by 20 part of the plane. The arena has been prepared in such a manner that it would take at least 2-3 passes of the husky to be able to ‘see’ the other husky in its camera. Two each of ‘husky’, ‘teddy_large’, ‘humanoid’, ‘duck_vhacd’ and ‘cube’, and three each of ‘r2d2’ and ‘sphere2red’ were used, all of which are inbuilt objects available in the pybullet_data package. All the corresponding URDFs along with their .obj and .mtl files are given in this directory.
 <p align="center">
- <img  width="400" height="250" src="https://github.com/Terabyte17/Autonomous-Room-Mapping-Robot/blob/master/Grid%20Media/Grid.png">
+ <img  width="400" height="400" src="https://github.com/Terabyte17/Autonomous-Room-Mapping-Robot/blob/master/Grid%20Media/Grid.png">
 </p>
 
 
